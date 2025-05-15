@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Expense Calculator</h1>
+        </header>
+        
+        <main>
+            <div class="card input-section">
+                <h2>Add New Expense</h2>
+                <form id="expenseForm">
+                    <div class="form-group">
+                        <input type="text" id="category" placeholder="Category" required>
+                        <input type="number" id="amount" placeholder="Amount" step="0.01" required>
+                        <button type="submit">
+                            <i class="fas fa-plus"></i> Add Expense
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card expenses-list">
+                <h2>Expenses List</h2>
+                <div class="table-container">
+                    <table id="expensesTable">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-sort="category">
+                                    Category <i class="fas fa-sort"></i>
+                                </th>
+                                <th class="sortable" data-sort="amount">
+                                    Amount <i class="fas fa-sort"></i>
+                                </th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="expensesList">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="summary-container">
+                <div class="card summary">
+                    <h2>Summary</h2>
+                    <div class="summary-item">
+                        <div class="summary-row">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <p>Total Expenses: <span id="totalExpenses">$0.00</span></p>
+                        </div>
+                        <div class="summary-row">
+                            <i class="fas fa-calendar-day"></i>
+                            <p>Average Daily: <span id="averageExpense">$0.00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card top-expenses">
+                    <h2>Top 3 Expenses</h2>
+                    <ul id="topExpenses">
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

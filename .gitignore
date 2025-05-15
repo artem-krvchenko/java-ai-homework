@@ -1,0 +1,64 @@
+# --------------------------
+# IntelliJ IDEA
+# --------------------------
+.idea/
+*.iml
+*.iws
+out/
+gen/
+
+# --------------------------
+# Compiled Java class files
+# --------------------------
+*.class
+
+# --------------------------
+# Build output
+# --------------------------
+target/
+build/
+
+# --------------------------
+# Maven
+# --------------------------
+.mvn/
+!**/src/main/**/mvnw*
+!**/src/test/**/mvnw*
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# --------------------------
+# Gradle
+# --------------------------
+.gradle/
+build/
+!gradle-wrapper.jar
+gradle-app.setting
+gradle-app.iml
+
+# --------------------------
+# Node.js
+# --------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+dist/
+.env
+.env.*
+
+# --------------------------
+# OS / Editor-specific
+# --------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak

@@ -1,1 +1,1 @@
-# java-ai-homework
+# AI In Development: Practice
