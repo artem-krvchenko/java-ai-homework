@@ -53,6 +53,10 @@ dist/
 .env
 .env.*
 
+# next.js
+.next/
+out/
+
 # --------------------------
 # OS / Editor-specific
 # --------------------------
